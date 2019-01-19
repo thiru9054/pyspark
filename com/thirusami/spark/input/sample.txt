@@ -1,0 +1,5 @@
+Apache Spark a fast and general purpose cluster computing system
+Apache Spark architecture evolved over the period of time and it is one of most widely used cluster computing system
+Spark community is very active
+I am very much interested to code in Apache Spark
+Developer can choose to code in scala or java or python or R languages
