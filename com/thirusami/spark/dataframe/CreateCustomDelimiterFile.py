@@ -11,7 +11,7 @@ if __name__=="__main__":
     spark=createSparkSess()
     #read a csv file and get dataframe
     emp_df=spark.read.format('csv').option('header',True).option('inferSchema','True').load("../input/emp.csv")
-    #create file with upper case cidella delimiter
+    #create file with upper case cedilla delimiter
     #coalesce(1) creates one parttion ie one partfile while using bigger files donot use coalesce(1)
     emp_df.coalesce(1).write.mode('OverWrite').option('delimiter','\u00C7').csv(spark_output_dir)
     #rename partfile
